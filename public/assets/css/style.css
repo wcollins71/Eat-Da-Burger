@@ -1,6 +1,12 @@
-.row-centered {
-  text-align:center;
+body{
+  background-color: blanchedalmond;
 }
-.col-centered {
-  text-align:center;
+
+.row-centered {
+ padding-top: 50px;
+}
+
+.list-group-item{
+  height: 50px;
+  text-align: left;
 }
