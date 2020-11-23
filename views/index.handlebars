@@ -1,0 +1,70 @@
+<div class="container bg">
+
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<img src="assets/img/burger.png" alt="Eat-Da-Burger" style="width:300px;height:300px;">
+			<h1>Eat-Da-Burger!</h1>
+			<p></p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+				<div class="card-header  text-center">
+					<h3>Burgers Available To Eat!</h3>
+				</div>
+				<ul class="list-group list-group-flush">
+					{{#each burgers}}
+					{{#unless this.devoured}}
+					<li class="list-group-item">
+						{{this.id}} - {{this.burger_name}}
+						<button type="button" class="eatburger btn btn-warning btn-sm float-right" id="eatbutton"
+							data-id="{{this.id}}" data-newDevoured="{{devour}}">Devour It!</button>
+					</li>
+					{{/unless}}
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-sm-6 text-center">
+			<div class="card">
+				<div class="card-header">
+					<h3>Burgers That Have Been Eaten!</h3>
+				</div>
+				{{#each burgers}}
+				{{#if this.devoured}}
+				<li>
+					{{this.id}}
+					{{this.burger_name}}
+
+				</li>
+				{{/if}}
+				{{/each}}
+
+			</div>
+		</div>
+	</div>
+	<!-- end .row -->
+
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4 text-center">
+
+			<h2>Add A Burger</h2>
+
+			<form class="create-form">
+				<div class="form-group">
+					<label for="newBurger">Enter a burger you want to order and click the "Submit" button.</label>
+					<textarea class="form-control" id="addedBurger" rows="2" name="burger_name"></textarea>
+				</div>
+				<button class="btn-primary" type="submit">Submit</button>
+			</form>
+
+		</div>
+
+	</div>
+	<!-- end .row -->
+
+</div>
