@@ -18,7 +18,7 @@ To install necesary dependencies, run the following command: npm install
 Hosted in heroku
 
 ## Links
-Heroku site https://polar-brook-23022.herokuapp.com/ \n
+Heroku site https://polar-brook-23022.herokuapp.com/ <\br>
 GitHub https://github.com/wcollins71/Eat-Da-Burger
 
 ## Questions 
