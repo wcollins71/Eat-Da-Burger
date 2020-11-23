@@ -7,25 +7,18 @@ Create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM
 ## Table of Contents 
  * [Installation](#installation) 
  * [Usage](#usage) 
- * [License](#license) 
  * [Links](#links) 
  * [Tests](#tests) 
  * [Questions](#questions)
 
 ## Installation 
-To install necesary dependencies, run the following command: 
---- 
-npm install
---- 
+To install necesary dependencies, run the following command: npm install
 
 ## Usage 
 Hosted in heroku
 
-## License 
-This project is licensed under the None license 
-
 ## Links
-Heroku site https://polar-brook-23022.herokuapp.com/
+Heroku site https://polar-brook-23022.herokuapp.com/ \n
 GitHub https://github.com/wcollins71/Eat-Da-Burger
 
 ## Questions 
